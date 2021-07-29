@@ -2,7 +2,7 @@
 
 /* eslint-disable */
 
-// Array
+// Array find
 // https://tc39.github.io/ecma262/#sec-array.prototype.find
 if (!Array.prototype.find) {
   Object.defineProperty(Array.prototype, 'find', {
@@ -52,7 +52,7 @@ if (!Array.prototype.find) {
   });
 }
 
-// findIndex
+// Array findIndex
 // https://tc39.github.io/ecma262/#sec-array.prototype.findIndex
 if (!Array.prototype.findIndex) {
   Object.defineProperty(Array.prototype, 'findIndex', {
@@ -102,7 +102,7 @@ if (!Array.prototype.findIndex) {
   });
 }
 
-// includes
+// Array includes
 // https://tc39.github.io/ecma262/#sec-array.prototype.includes
 if (!Array.prototype.includes) {
   Object.defineProperty(Array.prototype, 'includes', {
@@ -153,7 +153,7 @@ if (!Array.prototype.includes) {
   });
 }
 
-// reduce
+// Array reduce
 // Production steps of ECMA-262, Edition 5, 15.4.4.21
 // Reference: http://es5.github.io/#x15.4.4.21
 // https://tc39.github.io/ecma262/#sec-array.prototype.reduce
@@ -218,7 +218,7 @@ if (!Array.prototype.reduce) {
   });
 }
 
-// String
+// String startsWith
 if (!String.prototype.startsWith) {
   String.prototype.startsWith = function(searchString, position) {
     position = position || 0;
@@ -252,7 +252,7 @@ if (!String.prototype.includes) {
 }
 
 
-// Object
+// Object.assign
 if (typeof Object.assign != 'function') {
   // Must be writable: true, enumerable: false, configurable: true
   Object.defineProperty(Object, "assign", {
@@ -283,8 +283,20 @@ if (typeof Object.assign != 'function') {
   });
 }
 
+// Object.entries
+if (!Object.entries) {
+  Object.entries = function( obj ) {
+    var ownProps = Object.keys( obj ),
+        i = ownProps.length,
+        resArray = new Array(i); // preallocate the Array
+    while (i--)
+      resArray[i] = [ownProps[i], obj[ownProps[i]]];
 
-// Canvas
+    return resArray;
+  };
+}
+
+// Canvas toBlob
 if (!HTMLCanvasElement.prototype.toBlob) {
   Object.defineProperty(HTMLCanvasElement.prototype, 'toBlob', {
     value: function (callback, type, quality) {

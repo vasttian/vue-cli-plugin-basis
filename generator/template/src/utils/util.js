@@ -162,8 +162,8 @@ export function compare(a, b) {
 };
 
 export function compareArrayWithoutOrder(a = [], b = []) {
-  return a.length === b.length && ([...a].sort().toString() === [...b].sort().toString());
-};
+  return a.length === b.length && (JSON.stringify([...a].sort()) === JSON.stringify([...b].sort()));
+}
 
 export function isEmptyObject(e) {
   for (const t in e) {
