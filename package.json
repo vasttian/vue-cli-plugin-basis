@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-basis",
-  "version": "0.9.8-rc.2",
+  "version": "0.9.9-rc.1",
   "description": "Vue-CLI 3.x plugin for Yimian. Quickly build basic development templates.",
   "main": "index.js",
   "scripts": {
@@ -43,7 +43,8 @@
     "access": "public"
   },
   "dependencies": {
-    "prettier": "^1.14.3"
+    "prettier": "^1.14.3",
+    "vue-hamlet": "^1.1.2-beta.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-eslint": "^3.0.4",
