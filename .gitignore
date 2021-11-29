@@ -1,11 +1,13 @@
 .DS_Store
 node_modules
 __pycache__/
+yarn.lock
 design
 *.log
 packages/test
 dist
 temp
+cache
 .vuerc
 .version
 npm-debug.log
