@@ -39,10 +39,6 @@
     "url": "https://github.com/vasttian/vue-cli-plugin-basis/issues"
   },
   "homepage": "https://github.com/vasttian/vue-cli-plugin-basis#readme",
-  "publishConfig": {
-    "cache": "cache/.npm",
-    "registry": "http://47.118.89.103:8081/repository/ymnpm-hosted/"
-  },
   "dependencies": {
     "prettier": "^1.14.3",
     "vue-hamlet": "^1.1.2-beta.0"
