@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-basis",
-  "version": "1.0.3",
+  "version": "1.0.2",
   "description": "Vue-CLI 3.x plugin for Yimian. Quickly build basic development templates.",
   "main": "index.js",
   "scripts": {
