@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-basis",
-  "version": "0.9.9-rc.1",
+  "version": "1.0.2",
   "description": "Vue-CLI 3.x plugin for Yimian. Quickly build basic development templates.",
   "main": "index.js",
   "scripts": {
@@ -40,7 +40,8 @@
   },
   "homepage": "https://github.com/vasttian/vue-cli-plugin-basis#readme",
   "publishConfig": {
-    "access": "public"
+    "cache": "cache/.npm",
+    "registry": "http://47.118.89.103:8081/repository/ymnpm-hosted/"
   },
   "dependencies": {
     "prettier": "^1.14.3",
